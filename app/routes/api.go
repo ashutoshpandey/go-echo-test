@@ -1,15 +1,11 @@
 package routes
 
 import (
-	"net/http"
+	_dataCtrl "goecho/app/controllers"
 
 	"github.com/labstack/echo"
 )
 
-func Init() {
-	route := echo.New()
-
-	route.GET("/hello", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello")
-	})
+func Setup(e *echo.Echo) {
+	e.GET("/data", _dataCtrl.Index)
 }
