@@ -1,0 +1,53 @@
+package utility
+
+const OTP = "otp"
+const PAY = "pay"
+const CARD = "card"
+const PLANS = "plans"
+const USERS = "users"
+const VERIFY = "verify"
+const PROFILE = "profile"
+const VALIDATE = "validate"
+const PAYMENTS = "payments"
+const MERCHANTS = "merchants"
+const FINAL_STATUS = "final-status"
+
+const ROOT = "/api"
+const PROCESS = "/process"
+const CHECKOUT = "/checkout"
+const SEND_OTP = "/send-otp"
+const CREATE_LOGIN = "/login"
+const VERIFY_OTP = "/verify-otp"
+const CREATE_USER = "/create-user"
+const INITIATE_REQUEST = "/initiate-request"
+const UPDATE_PAYMENT = "/update-payment/=id"
+const TRANSACTION_RESULT = "/transaction-result"
+const CREATE_TRANSACTION = "/create-transaction"
+const CREATE_INSTALLMENT = "/create-installment"
+const GET_CHECKOUT_DETAIL = "/checkout/=orderId"
+const PROCESS_GATEWAY_RESPONSE = "/process-response"
+const GET_USER_BY_PHONE = "/users/phone/=phoneNumber"
+const VALIDATE_PAYMENT_USER = "/validate-payment-user"
+const GET_MERCHANT_KEY = "/get-merchant-key/=merchantId"
+const UPDATE_CHECKOUT_PLAN = "/update-checkout-plan/=id"
+const GET_MERCHANT_PLANS = "/merchants/=merchantId/plans"
+const GET_SETTLEMENT = "/get-settlement/=merchantId/=page"
+const GET_MERCHANT_BY_EMAIL = "/get-merchant-by-email/=email"
+
+const EXTERNAL_OTP = "otp"
+const EXTERNAL_USERS = "users"
+const EXTERNAL_VALIDATE = "validate"
+const EXTERNAL_CREATE_LOGIN = "login"
+const EXTERNAL_CHECKOUTS = "checkouts"
+const EXTERNAL_MERCHANTS = "merchants"
+const EXTERNAL_INITIATE = "pay/initiate"
+const EXTERNAL_GET_MERCHANT_KEY = "merchant-key"
+const EXTERNAL_CREATE_TRANSACTION = "transactions"
+const EXTERNAL_GET_SETTLEMENT = "settlements/merchants"
+const EXTERNAL_PROCESS_GATEWAY_RESPONSE = "pay/process"
+const EXTERNAL_CREATE_INSTALLMENT = "orders/installments"
+
+var USER_URL string
+var GATEWAY_URL string
+var PAYMENT_URL string
+var MERCHANT_URL string
